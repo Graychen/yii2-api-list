@@ -38,7 +38,7 @@ class BaseCase extends TestCase
             'modules' => [
                 'api-list' => [
                     'class' => 'graychen\yii2\apilist\Module',
-                    'controllerNamespace' => 'graychen\yii2\apilist\tests\controllers'
+                    'controllerNamespace' => 'graychen\yii2\apilist\controllers'
                 ]
             ]
         ], $config));
