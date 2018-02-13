@@ -1,6 +1,6 @@
 <?php
 
-namespace graychen\yii2\api\controllers;
+namespace graychen\yii2\apilist\controllers;
 
 use Yii;
 
@@ -9,7 +9,7 @@ class DefaultController extends yii\web\Controller
        /**
         * 接口列表
         * @return array
-        */ 
+        */
         public function actionIndex()
         {
                 $rules = require(dername(__FILE__ ) . './../config/rules.php');

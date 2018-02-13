@@ -1,6 +1,6 @@
 <?php
 
-namespace graychen\yii2\api;
+namespace graychen\yii2\apilist;
 
 use yii;
 use yii\base\module as BaseModule;

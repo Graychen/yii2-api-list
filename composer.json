@@ -3,7 +3,7 @@
     "description": "show the api list",
     "type": "yii-extension",
     "require-dev": {
-        "phpunit/phpunit": "~4.0"
+        "phpunit/phpunit": "^7.1@dev"
     },
     "license": "MIT",
     "authors": [
@@ -14,10 +14,16 @@
     ],
     "minimum-stability": "dev",
     "require": {
-          "yiisoft/yii2": ">=2.0.6"     
+          "yiisoft/yii2": ">=2.0.6"
     },
     "autoload":{
-            "graychen\\yii2\\api\\":"src",
-            "graychen\\yii2\\api\\tests\\":"tests"
+      "psr-4": {
+            "graychen\\yii2\\apilist\\":"src"
+       }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "graychen\\yii2\\apilist\\tests\\":"tests"
+        }
     }
 }
