@@ -26,6 +26,8 @@ class DefaultControllerTest extends BaseCase
 
     protected function tearDown()
     {
+        unlink(dirname(__FILE__) . '/../src/config/rules.php');
+        rmdir(dirname(__FILE__). '/../src/config');
         parent::tearDown();
     }
 
