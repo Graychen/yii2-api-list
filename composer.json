@@ -25,5 +25,11 @@
         "psr-4": {
             "graychen\\yii2\\apilist\\tests\\":"tests"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
