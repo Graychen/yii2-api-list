@@ -1,5 +1,6 @@
 <?php
 namespace graychen\yii2\apilist\tests;
+
 use Yii;
 
 class DefaultControllerTest extends BaseCase
@@ -8,9 +9,9 @@ class DefaultControllerTest extends BaseCase
     {
         $textpath=dirname(__FILE__) . '/../src/config/rules.php';
         if (!file_exists($textpath)) {
-              mkdir(dirname(__FILE__). '/../src/config');
-              $file=fopen($textpath,'a+');
-             $content="<?php\r
+            mkdir(dirname(__FILE__). '/../src/config');
+            $file=fopen($textpath, 'a+');
+            $content="<?php\r
                 return [\r
                     [\r
                         'class' => 'yii\\rest\UrlRule',\r
@@ -18,9 +19,9 @@ class DefaultControllerTest extends BaseCase
                         'only' => ['index']\r
                     ],\r
                 ];";
-        fwrite($file,$content);
-        fclose($file);
-      }
+            fwrite($file, $content);
+            fclose($file);
+        }
         parent::setUp();
     }
 
@@ -38,7 +39,6 @@ class DefaultControllerTest extends BaseCase
         ];
         Yii::$app->request->queryParams = $param;
         $res=Yii::$app->runAction('api-list/default');
-        $this->assertEquals("/v1/defaults",$res['Default']);
+        $this->assertEquals("/v1/defaults", $res['Default']);
     }
-
 }
