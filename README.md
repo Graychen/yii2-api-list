@@ -10,8 +10,12 @@ show api list
 [![Build Status](https://travis-ci.org/Graychen/yii2-api-list.svg?branch=master)](https://travis-ci.org/Graychen/yii2-api-list)
 
 Latest Stable Version Total Downloads License StyleCI Build Status Scrutinizer Code Quality Code Coverage Build Status
+### How to require
+```php
+composer require graychen/yii-api-list
+```
 
-Config Module in components part
+### Config Module in components part
 ```
    'api-list' => [
         'class' => 'graychen\yii2\apilist\Module',
