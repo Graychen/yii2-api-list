@@ -5,6 +5,7 @@ use Yii;
 use yii\base\Exception;
 use yii\helpers\ArrayHelper;
 use PHPUnit\Framework\TestCase;
+
 /**
  * This is the base class for all yii framework unit tests.
  */
